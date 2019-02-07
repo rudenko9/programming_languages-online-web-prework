@@ -32,7 +32,7 @@ languages = {
 
 def reformat_languages(languages)
   new_hash = {}
-  language.each do |k, v|
+  languages.each do |k, v|
     v.each do |k1, v1|
       new_hash[k1] ||= v1
       new_hash[k1][:style] ||= []
